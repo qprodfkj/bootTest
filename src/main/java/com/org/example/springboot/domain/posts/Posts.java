@@ -1,5 +1,6 @@
 package com.org.example.springboot.domain.posts;
 
+import com.org.example.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id //해당 테이블의 PK필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK의 생성규칙
@@ -29,9 +30,6 @@ public class Posts {
 
     /**
      * Builder : 해당 클래스의 빌더 패턴 클래스를 생성
-     * @param title
-     * @param content
-     * @param author
      */
     @Builder
     public Posts(String title, String content, String author){
