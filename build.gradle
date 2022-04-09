@@ -27,11 +27,17 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
     // lombok
-    implementation 'org.projectlombok:lombok'
+    implementation('org.projectlombok:lombok')
     annotationProcessor('org.projectlombok:lombok')
 
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
     implementation('com.h2database:h2')
+
+    //Maria DB
+    implementation('org.mariadb.jdbc:mariadb-java-client')
+
+    //mustache
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
 
 //    implementation('org.projectlombok:lombok:1.18.22')
 //    annotationProcessor('org.projectlombok:lombok:1.18.22')
