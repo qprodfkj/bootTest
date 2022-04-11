@@ -39,12 +39,10 @@ dependencies {
     //mustache
     implementation('org.springframework.boot:spring-boot-starter-mustache')
 
-    implementation('org.springframework.boot:spring-boot-devtools')
+    //oauth
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
 
-//    implementation('org.projectlombok:lombok:1.18.22')
-//    annotationProcessor('org.projectlombok:lombok:1.18.22')
-//    testImplementation('org.projectlombok:lombok:1.18.22')
-//    testAnnotationProcessor('org.projectlombok:lombok:1.18.22')
+    implementation('org.springframework.boot:spring-boot-devtools')
 }
 
 test {
